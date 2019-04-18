@@ -1,0 +1,31 @@
+//script to create database,collections and insert data into same
+
+//create database
+
+use students
+
+//create collections
+
+db.createCollection('secrets');
+db.createCollection('students');
+
+
+//insert data into collections
+
+// students collection
+
+db.students.insert([
+{"favMovie" : "", "email" : "amitpandit09@gmail.com", "name" c", "program" : "Information Techology", "SImeaning" : "", "concentration" : "Datascience", "proficiency" :  "aws ", "degree" : "job", "goals" : "learning", "__v" : 0 }
+{"favMovie" : "300", "email" : "ejohn126@uncc.edu", "name" : his topic", "program" : "Computer Science", "SImeaning" : "", "concentration" : "Cyber security", "proficienackground", "technologies" : "Python, Powershell", "degree" : "Get a Cyber Security Job", "goals" : "Learn m
+{"favMovie" : "Inception", "email" : "sbelote1@uncc.edu", "nain this topic", "program" : "Information Techology", "SImeaning" : "Integrating different systems together ticiency" : "Beginner", "database" : "NOSQL", "cloudservices" : "NOSQL", "technologies" : "NodeJs, MongoDB", e", "__v" : 0 }
+{"favMovie" : "", "email" : "bob@gmail.com", "name" : "bob", gram" : "Information Techology", "SImeaning" : "integration of different sercvies", "concentration" : "Game QL", "technologies" : "open source", "degree" : "research", "goals" : "great course", "__v" : 0 }
+]);
+
+//secrets collection
+
+db.secrets.insert([
+{"username" : "amitpandit09", "password" : "amitpandit123", "__v" : 0 }
+]);
+
+
+//if there is some issue, please remove the entry "__v":0 from each record and re try.
